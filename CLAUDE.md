@@ -8,6 +8,15 @@ Course materials for **T81-558: Applications of Deep Neural Networks** (Washingt
 
 `README.md` is the live syllabus (module schedule, due dates, notebook links). When notebook filenames or module contents change, update the syllabus table in `README.md` to match. `README-fall.md`, `README_old.md`, `intro.md`, and `copyright.md` are book/alternate-semester text.
 
+## Language and spelling
+
+Use **American English spellings everywhere** — notebook markdown and code comments, identifiers, docstrings, printed and logged strings, `README.md` and the other Markdown files, `prompts/*.txt`, and commit messages. Prefer `color`, `normalize`, `analyze`, `optimize`, `vectorized`, `initialize`, `serialize`, `tokenize`, `modeling`, `labeled`, `canceled`, `center`, `fiber`, `behavior`, `gray`, `license`, `defense`, `catalog`, `artifact`, `toward`, `among` over `colour`, `normalise`, `analyse`, `optimise`, `vectorised`, `initialise`, `serialise`, `tokenise`, `modelling`, `labelled`, `cancelled`, `centre`, `fibre`, `behaviour`, `grey`, `licence`, `defence`, `catalogue`, `artefact`, `towards`, `amongst`. LLM-generated cells are the usual source of drift — the `prompts/` workflow has produced British spellings in code comments before — so check newly generated prose and comments before committing.
+
+Do **not** "fix" a British spelling that belongs to something external; it is data or a citation, not our prose:
+- Dataset directory and class names — the iris image set ships an `iris-versicolour` folder (`t81_558_class_05_2_cnn.ipynb`).
+- Cited titles, journal names, and BibTeX keys in `citations.bib`, e.g. `Ecological Modelling` and `weston2015towards`.
+- URLs, author names, and third-party API identifiers.
+
 ## Layout and naming
 
 - **Lesson notebooks**: `t81_558_class_<MODULE>_<PART>_<topic>.ipynb` (e.g. `t81_558_class_02_2_pytorch_neural.ipynb` = Module 2, Part 2.2). Module and part numbers are load-bearing — they drive the syllabus and the cross-links inside each notebook.
